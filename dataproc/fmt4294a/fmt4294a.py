@@ -6,8 +6,8 @@ import re
 from getFile import getFile
 from getData import getData
 from toXls import toXls
+from getCalc import getCalc
 
-from xlrd import open_workbook
 
 #    file = open(filePath,'r')
 
