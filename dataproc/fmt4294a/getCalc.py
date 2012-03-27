@@ -52,7 +52,6 @@ def getCalc(data):
             ans = int(raw_input(''))
             try:
                 for an in ans:
-                    print an
                     if an == 0:
                         b = 1 #do nothing
                     else:
@@ -63,7 +62,6 @@ def getCalc(data):
                         choice = [trace,calcChoices[int(an)-1]]
                         data = calc(data,choice)
             except TypeError:
-                print ans
                 if ans == 0:
                     a = 1
                 else:
@@ -71,7 +69,6 @@ def getCalc(data):
                         trace = 'dataA'
                     else:
                         trace = 'dataB'
-                    print calcChoices
                     choice = [trace,calcChoices[int(ans)-1]]
                     data = calc(data,choice)
 
