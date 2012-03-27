@@ -6,6 +6,7 @@ from xlrd import open_workbook
 from xlwt import Workbook
 from tempfile import TemporaryFile
 
+
 def toXls(data,filePath):
     '''Save the data in an excel file of the same name as the original data file'''
     #Check to see if the filepath.xls already exists
@@ -34,6 +35,7 @@ def toXls(data,filePath):
         col+=1
 
     #TraceA
+# move these two trace sections to an inline fun
     col=0
     for head in data['headA']:
         wsA.write(0,col,head)
