@@ -123,9 +123,13 @@ def toXls(data,filePath):
     wsSet = wb.add_sheet('settings')
 
     #Settings
-    col = 0
-#    for set in data['settings']:
-#        print set
+    col= 0
+    for set in data['settings']:
+        wsSet.write(col,0,set[0])
+        wsSet.write(col,1,set[1])
+        col+=1
+
+    #Traces
     col=0
     for head in data['headA']:
         wsA.write(0,col,head)
@@ -135,11 +139,8 @@ def toXls(data,filePath):
         wsB.write(0,col,head)
         col+=1
 
-
     wb.save(newPath)
     wb.save(TemporaryFile())
-    
-
 
 def display():
     '''Display data in graph'''
