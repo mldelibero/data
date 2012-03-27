@@ -7,6 +7,8 @@ from getFile import getFile
 from getData import getData
 from toXls import toXls
 
+from xlrd import open_workbook
+
 #    file = open(filePath,'r')
 
 def display():
@@ -18,5 +20,6 @@ def display():
 if __name__=='__main__':
     path = getFile()
     data = getData(path)
+    data = getCalc(data)
     toXls(data,path)
     display()

@@ -6,7 +6,6 @@ from xlrd import open_workbook
 from xlwt import Workbook
 from tempfile import TemporaryFile
 
-
 def toXls(data,filePath):
     '''Save the data in an excel file of the same name as the original data file'''
     #Check to see if the filepath.xls already exists
@@ -44,7 +43,7 @@ def toXls(data,filePath):
     for pts in data['dataA']:
         col = 0
         for pt in pts:
-            wsA.write(row,col,pt)
+            wsA.write(row,col,float(pt))
             col+=1
         row+=1
     
