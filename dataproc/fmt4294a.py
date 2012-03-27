@@ -129,15 +129,31 @@ def toXls(data,filePath):
         wsSet.write(col,1,set[1])
         col+=1
 
-    #Traces
+    #TraceA
     col=0
     for head in data['headA']:
         wsA.write(0,col,head)
         col+=1
+    row = 1
+    for pts in data['dataA']:
+        col = 0
+        for pt in pts:
+            wsA.write(row,col,pt)
+            col+=1
+        row+=1
+    
+    #TraceB
     col=0
     for head in data['headB']:
         wsB.write(0,col,head)
         col+=1
+    row = 1
+    for pts in data['dataB']:
+        col = 0
+        for pt in pts:
+            wsB.write(row,col,pt)
+            col+=1
+        row+=1
 
     wb.save(newPath)
     wb.save(TemporaryFile())
