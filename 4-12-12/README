@@ -1,0 +1,13 @@
+Data was taken on the leakage current of the capacitors:
+
+0x0001
+0x0002
+0x0003
+tantalum - need part number
+
+
+voltage source: Agilent E3631A
+picoammeter: Keithley 485
+
+The setup was the voltage source in series with a 100 ohm resistor, the capacitor, and the current meter.
+The voltage was stepped from 1V to 5V in 1V increments and the leakage current was allowed to stabalize before a reading was taken.
