@@ -1,2 +1,4 @@
 This folder holds all of the general purpose data collected for the CWRU Ti capacitor project.
 Note: There may be other data folders in other directories with more specific purposes
+
+capDatabase.xlsx holds all of the capacitor and test information.
